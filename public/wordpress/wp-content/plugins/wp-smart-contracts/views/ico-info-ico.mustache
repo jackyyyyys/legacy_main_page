@@ -1,0 +1,36 @@
+<span class="ui {{color}} image {{size}} label">
+  <img src="{{imgUrl}}{{type}}.png">
+  <span class="wpsc-capitalize">{{type}}</span>
+</span>
+
+{{#is_bluemoon}}
+
+    {{#hardcapped}}
+    <span class="ui {{color}} image {{size}} label">
+        <i class="suitcase icon"></i>
+        Hard capped <div class="detail">{{hardcap}}</div>
+    </span>
+    {{/hardcapped}}
+    
+    {{#pause_ico}}
+    <span class="ui {{color}} image {{size}} label">
+        <i class="list ul icon"></i>
+        Pausable ICO
+    </span>
+    {{/pause_ico}}
+    
+    {{#timed}}
+    <span class="ui {{color}} image {{size}} label">
+        <i class="clock outline icon"></i>
+        Timed
+        <div class="detail">From {{opening}} to {{closing}}</div>
+    </span>
+    {{/timed}}
+    
+{{/is_bluemoon}}
+
+<span class="ui  {{color}} image {{size}} label">
+    <i class="ethereum icon"></i>
+    Wallet <div class="detail">{{wallet}}</div>
+</span>
+

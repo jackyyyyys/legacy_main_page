@@ -1,0 +1,23 @@
+<div>
+	<ul class="ui list">
+	{{#disclaimers}}
+		<li>
+			{{#href}}
+				<a href="{{href}}" target="_blank">
+			{{/href}}
+			{{{text}}}
+			{{#href}}
+				</a>
+			{{/href}}
+		</li>
+	{{/disclaimers}}
+	</ul>
+
+	<div class="ui toggle checkbox">
+		<input id="wpsc-deploy-confirm" type="checkbox" tabindex="0">
+		<label>
+			{{{confirm}}}
+		</label>
+	</div>
+</div>
+<p>{{{footer}}}</p>
